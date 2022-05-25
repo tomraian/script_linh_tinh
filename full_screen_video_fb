@@ -1,0 +1,10 @@
+javascript:
+var current_link = location.href;
+var arr_split = current_link.split("/");
+if( arr_split[arr_split.length - 1] == ''){
+    arr_split.pop();
+}
+var id_video = arr_split[arr_split.length - 1];
+var link = 'https://www.facebook.com/photo/?fbid=';
+var link_video = link + id_video;
+window.location = link_video;
